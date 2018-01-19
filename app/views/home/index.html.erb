@@ -1,8 +1,6 @@
 <h1>Catsta app</h1>
 <div>cat pics go here</div>
 
-<ul>
-  <li>[cat pic 1]</li>
-</ul>
-
-
+<% @cats.each do |cat| %>
+  <%= image_tag cat["url"], width: '200px', alt: "oops! no pic here" %>
+<% end %>
